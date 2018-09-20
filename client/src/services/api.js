@@ -1,5 +1,5 @@
 // set base_url -- heroku url OR localhost
-const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
+const BASE_URL = process.env.REACT_APP_BASE_URL || 'https://git.heroku.com/vast-ravine-47572.git';
 
 
 
