@@ -7,7 +7,7 @@ class CreateUnits < ActiveRecord::Migration[5.2]
       t.boolean  :hop
       t.boolean  :skip
       t.boolean  :jump
-      t.string   :student_id 
+      t.integer   :student_id 
       t.timestamps
     end
   end

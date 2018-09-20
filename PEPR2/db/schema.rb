@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2018_09_17_193459) do
     t.boolean "hop"
     t.boolean "skip"
     t.boolean "jump"
-    t.string "student_id"
+    t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

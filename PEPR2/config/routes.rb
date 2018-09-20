@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :students do
     resources :units
   end
+  resources :units 
 end

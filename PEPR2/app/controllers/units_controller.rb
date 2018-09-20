@@ -1,6 +1,11 @@
 class UnitsController < ApplicationController
     def index
-        render json: { books: Unit.where("student_id = ?",params[:student_id]) }
+      if (params[:student_id])
+        @units = Student.find(params[:student_id]).units
+      else
+        @units = Unit.all
+      end
+      render json: { units: @units}
       end
     
       def show
@@ -9,8 +14,8 @@ class UnitsController < ApplicationController
       end
     
       def create
-        new_unit = Unit.new(unit_params)
-        new_unit.save
+        @student = Student.find(params[:student_id])
+        new_unit = @student.units.create(unit_params)
         render json: { unit: new_unit }
       end
     
@@ -29,8 +34,12 @@ class UnitsController < ApplicationController
     
       def unit_params
         params.require(:unit_data).permit(
-          :name_first,
-          :name_last
+          :unit_name,
+          :run,
+          :gallop,
+          :hop,
+          :jump,
+          :skip
         )
       end
 end
