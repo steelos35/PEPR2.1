@@ -98,9 +98,9 @@ button {
   color: gray;
 }
 
-/* All Dogs/DogsIndex/Landing Page */
+/* All students/studentsIndex/Landing Page */
 /* ----------------- */
-.AllDogsPg {
+.AllstudentsPg {
   padding: 10px;
   background-color: blue;
   margin-top: 20px;
@@ -136,13 +136,13 @@ button {
   cursor: pointer;
 }
 
-.pupperPics {
+.studentPics {
   height: 160px;
   width: 160px;
   border: solid rgb(0, 4, 255) 2px;
 }
 
-.dogName {
+.studentName {
   font-family: 'Schoolbell', regular;
   font-size: 32px;
   color: blue;
@@ -186,7 +186,7 @@ button {
   font-size: 40px;
 }
 
-.pupperPic {
+.studentPic {
   border: white solid 4px;
 }
 
@@ -195,7 +195,7 @@ button {
 }
 
 
-/* Create/Add New Dog Form */
+/* Create/Add New student Form */
 /* ----------------- */
 .createForm{
   margin: auto;
@@ -215,7 +215,7 @@ button {
   margin-bottom: 24px;
 }
 
-.submitNewPup{
+.submitNewstudent{
   align-self: center;
   width: 100px;
   height: 30px;
@@ -230,7 +230,7 @@ button {
 
 /* Gradebook Page */
 /* ----------------- */
-.gradebooktitle {
+.unittitle {
   margin: 30px 0px 0px 0px;
   font-family: 'Love Ya Like A Sister', regular;
   font-size: 40px;
@@ -264,7 +264,7 @@ tr:nth-child(even) {
   background-color: rgba(255, 166, 0, 0.212);
 }
 
-.pawsTile {
+.logoTile {
   display: flex;
   padding-left: 20px;
   padding-top: 40px;
@@ -302,7 +302,7 @@ tr:nth-child(even) {
   max-width: 300px;
 }
 
-.updateDogTitle {
+.updateStudentTitle {
   font-family: 'Schoolbell', regular;
   font-size: 40px;
   color: blue;
